@@ -47,7 +47,7 @@ class Account {
 
 public class Bank {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        try(Scanner sc = new Scanner(System.in)){
         boolean flag = true;
         while (flag) {
             Account ac = new Account("Ankit", 1000, 12340);
@@ -73,6 +73,7 @@ public class Bank {
                     break;
             }
         }
+    }
 
     }
 }
