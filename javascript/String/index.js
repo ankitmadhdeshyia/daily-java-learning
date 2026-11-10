@@ -22,7 +22,11 @@ let d="Ankit"
 let e="Nita"
 let f=d.concat(e)
 console.log(f)
-// practise String Question
+//practise String Question
 let language="Java is A programming Language"
-
+console.log(language.substring(10,4))
+console.log(language.substring(4,10))
+console.log(language.startsWith("Java"))
+console.log(language.repeat(3))
+console.log(language.endsWith("Language"))
 

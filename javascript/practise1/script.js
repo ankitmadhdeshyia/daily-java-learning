@@ -12,3 +12,7 @@ var t=3;
 let m=n+t;
 console.log(m)
 console.log(typeof m)
+let str="Hello World"
+console.log(typeof str)
+let newString="Hello"+6;
+console.log(newString)
