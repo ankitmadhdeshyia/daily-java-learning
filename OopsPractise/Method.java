@@ -53,6 +53,10 @@ class Cat extends Animal {
         System.out.println("Cat eat Other Animal");
     }
 }
+//abstraction cla
+class car{
+
+}
 
 public class Method {
     public static void main(String[] args) {
