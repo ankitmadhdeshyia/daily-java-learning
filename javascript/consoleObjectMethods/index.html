@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Console Object Methods</title>
 </head>
 <style>
-    .box{
+    .box {
         border: 2px solid black;
         padding: 10px;
         margin: 10px;
@@ -14,14 +15,31 @@
         height: 80px;
     }
 </style>
+
 <body>
     <div class="container">
-        <div class="box">Ankit Madhdeshyia</div>
+        <div class="box">Ankit Madhdeshyiaa</div>
         <div class="box">Ankit Madhdeshyia</div>
         <div class="box">Ankit Madhdeshyia</div>
         <div class="box">Ankit Madhdeshyia</div>
         <div class="box">Ankit Madhdeshyia</div>
     </div>
-    <script src="index.js"></script>
+    <script>
+        let again = true
+        while (again) {
+            let age = Number(prompt("Enter Your age"))
+            if (age > 18) {
+                alert("You can drive")
+            } else if (age <= 0) {
+                console.error("wrong Input")
+            } else {
+                alert("You Can Not Drive")
+            }
+            again = confirm("Want To see prompt again")
+        }
+        let backColor=prompt("Enter BackGround Color Name To Change")
+        document.body.style.backgroundColor=backColor
+    </script>
 </body>
+
 </html>

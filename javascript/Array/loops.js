@@ -1,12 +1,12 @@
 const prompt = require('prompt-sync')();
 // let a = [12, 14, 43, 13, 65, 41]
-// //we can also rename the index word with i as we do in java
-// //this is simple for loop
+// we can also rename the index word with i as we do in java
+// this is simple for loop
 // for (let index = 0; index < a.length; index++) {
 //     const element = a[index];
 //     console.log(element)
 // }
-// //this is now for Each Loop
+// this is now for Each Loop
 // a.forEach((value, index, array) => {
 //     console.log(value, index, array)
 // })
@@ -26,12 +26,12 @@ const prompt = require('prompt-sync')();
 // for (const element of a) {
 //     console.log(element)
 // } 
-// //Here each elememt of array will get multiplied by itself 2 times
+// Here each elememt of array will get multiplied by itself 2 times
 // let newArr=a.map((e)=>{
 //      return e**2;
 // })
 // console.log(newArr)
-// //it will print the all element which is greater than 13
+// it will print the all element which is greater than 13
 // const greaterThanTwo = (e) => {
 //     if (e > 13) {
 //         return true
@@ -40,33 +40,61 @@ const prompt = require('prompt-sync')();
 // }
 // console.log(a.filter(greaterThanTwo))
 
-let flag = true
- let arr = []
-while (flag) {
-    console.log("Enter Opeation\n, 1:Add number\n,2:Exit")
-    let choice=prompt("Enter The Operation")
-    switch (choice) {
-        case "1":
-            let num = prompt("Enter Number To add in The array")       
-            arr.push(Number(num))
-            break;
-        case "2":
-            console.log("Thanks For Adding The Number")
-            flag=false
-            break;
+// let flag = true
+//  let arr = []
+// while (flag) {
+//     console.log("Enter Opeation\n, 1:Add number\n,2:Exit")
+//     let choice=prompt("Enter The Operation")
+//     switch (choice) {
+//         case "1":
+//             let num = prompt("Enter Number To add in The array")       
+//             arr.push(Number(num))
+//             break;
+//         case "2":
+//             console.log("Thanks For Adding The Number")
+//             flag=false
+//             break;
 
-        default:
-            console.log("Invalid option, try Again")
-            break;
-    }
+//         default:
+//             console.log("Invalid option, try Again")
+//             break;
+//     }
+// }
+// console.log(arr)
+// for (let index = 0; index < arr.length; index++) {
+//     if(arr[index]%10==0){
+//         console.log(arr[index])
+
+//     }
+
+// }
+//finding factorial of a given number using for loop
+let n = 6
+let count = 1
+for (let i = 1; i <= n; i++) {
+    count = count * i
 }
-console.log(arr)
-for (let index = 0; index < arr.length; index++) {
-    if(arr[index]%10==0){
-        console.log(arr[index])
-    }
-    
+console.log(count)
+
+//finding values using reduce method
+let add = (a, b) => {
+    return a * b
 }
+let array = [2, 3, 4, 5]
+let sum = array.reduce(add)
+console.log(sum)
+
+let num2 = prompt("Enter Number to find factorial")
+let arr1 = []
+for (let i = 1; i <= num2; i++) {
+    arr1.push(i)
+}
+let factorial = (a, b) => {
+    return a * b
+}
+let factor = arr1.reduce(factorial)
+console.log(factor)
+
 
 
 
