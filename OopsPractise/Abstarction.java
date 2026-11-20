@@ -27,20 +27,24 @@ abstract class Truck {
 }
 
 class Tata extends Truck {
+    @Override
     void brake() {
-        System.out.println("This Truck get Stopped By using Hand Brake");
+        System.out.println("Tata Truck get Stopped By using Hand Brake");
     }
 
+    @Override
     void accelerate() {
         System.out.println("This Truck Is (Tata)get Accelrated By Accelerator");
     }
 }
 
 class AshokLayland extends Truck {
+    @Override
     void brake() {
-        System.out.println("This Truck get Stopped By using Leg Brake");
+        System.out.println("AshokLayland Truck get Stopped By using Leg Brake");
     }
 
+    @Override
     void accelerate() {
         System.out.println("This Truck (AshokLayland)Is get Accelrated By Accelerator");
     }
@@ -53,15 +57,30 @@ public class Abstarction {
         c.accelerate();
         c.brake();
 
-        AshokLayland asl = new AshokLayland();
-        asl.brake();
-        asl.drive();
-        asl.accelerate();
+        // AshokLayland asl = new AshokLayland();
+        // //We can use the Method Of parent class
+        // asl.brake();
+        // asl.drive();
+        // asl.accelerate();
 
-        Tata tt = new Tata();
-        tt.brake();
-        tt.drive();
-        tt.accelerate();
+        // Tata tt = new Tata();
+        // // Here Also We can use the Method Of parent class
+        // tt.brake();
+        // tt.drive();
+        // tt.accelerate();
+
+        // This Same Thing Can also be done by Another Way
+        Truck tr = new AshokLayland();
+        tr.drive();
+        tr.accelerate();
+        tr.brake();
+
+        // Another Class
+
+        Truck truck = new Tata();
+        truck.drive();
+        truck.accelerate();
+        truck.brake();
     }
 
 }
